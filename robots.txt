@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.dayssince.co.nz/sitemap.xml
