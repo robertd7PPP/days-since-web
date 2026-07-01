@@ -202,11 +202,10 @@
     .visual { display: flex; justify-content: center; }
 
     /* ── Privacy band ── */
-    .privacy { background: var(--bg); }
     .privacy .inner { text-align: center; }
     .privacy .sec-lede { margin: 0 auto 36px; }
     .priv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; max-width: 880px; margin: 0 auto; text-align: left; }
-    .priv-item { background: var(--card); border: 1px solid var(--border-lt); border-radius: var(--r-lg); padding: 18px; }
+    .priv-item { background: var(--card); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 18px; box-shadow: var(--shadow); }
     .priv-item svg { width: 20px; height: 20px; color: var(--coral); margin-bottom: 9px; }
     .priv-item h3 { font-size: 14px; font-weight: 700; margin-bottom: 4px; letter-spacing: -0.01em; }
     .priv-item p { font-size: 13px; color: var(--text-sec); line-height: 1.5; }
@@ -222,7 +221,6 @@
     .price-note { font-size: 13px; color: var(--text-muted); margin-top: 24px; }
 
     /* ── FAQ ── */
-    .faq { background: var(--bg); }
     .faq-list { display: flex; flex-direction: column; gap: 9px; margin-top: 28px; }
     .faq-list details { background: var(--card); border: 1px solid var(--border); border-radius: var(--r-md); padding: 15px 17px; }
     .faq-list details[open] { border-color: var(--coral); }
@@ -372,6 +370,48 @@
   </div>
 </section>
 
+<!-- ── FEATURE: HISTORY & STATS ── -->
+<section class="feature" id="history">
+  <div class="inner">
+    <div class="row flip">
+      <div class="copy">
+        <div class="sec-eyebrow">History &amp; stats</div>
+        <h2>Every counter tells its story.</h2>
+        <p>Tap any event for the pattern behind the number — how many times you've reset it, the average gap between resets, and the full history. Forgot to log one? Reset to an earlier date and the stats stay honest.</p>
+        <ul>
+          <li><span class="ck">✓</span> Total resets and average gap at a glance</li>
+          <li><span class="ck">✓</span> A full reset history for every event</li>
+          <li><span class="ck">✓</span> Backdate a reset if you logged it late</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <div class="phone"><img class="phone-photo" src="screenshots/eventDetail.png" alt="Days Since event detail — day count with total resets, average between resets and reset history" /></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FEATURE: CATEGORIES ── -->
+<section class="feature alt" id="categories">
+  <div class="inner">
+    <div class="row">
+      <div class="copy">
+        <div class="sec-eyebrow">Categories</div>
+        <h2>One part of life at a time.</h2>
+        <p>Home, Health, Work, Life, Hobby — every event gets a calm, colour-coded category, and one tap filters the list to just what you're dealing with right now. Live counts show where things are piling up.</p>
+        <ul>
+          <li><span class="ck">✓</span> Five colour-coded categories</li>
+          <li><span class="ck">✓</span> Filter with a tap, counts included</li>
+          <li><span class="ck">✓</span> Due and Overdue still stand out</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <div class="phone"><img class="phone-photo" src="screenshots/eventsFiltered.png" alt="Days Since events filtered to the Home category, with colour-coded category chips" /></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ── FEATURE: CALENDAR IMPORT ── -->
 <section class="feature" id="import">
   <div class="inner">
@@ -388,6 +428,27 @@
       </div>
       <div class="visual">
         <div class="phone"><img class="phone-photo" src="screenshots/importCal.png" alt="Days Since import-from-calendar sheet, selecting birthdays to import" /></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FEATURE: REMINDER DETAIL / BIRTHDAYS ── -->
+<section class="feature alt" id="birthdays">
+  <div class="inner">
+    <div class="row">
+      <div class="copy">
+        <div class="sec-eyebrow">Countdowns</div>
+        <h2>Know the day — and have the words.</h2>
+        <p>Open any reminder for a clear countdown to the date, with annual repeats and the next occurrence worked out for you. And when it's a birthday, Apple Intelligence can draft a warm message right on your device — nothing sent anywhere.</p>
+        <ul>
+          <li><span class="ck">✓</span> Clear countdown to the exact date</li>
+          <li><span class="ck">✓</span> Yearly repeats with the next date handled</li>
+          <li><span class="ck">✓</span> On-device AI drafts a birthday message (iOS 26)</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <div class="phone"><img class="phone-photo" src="screenshots/reminderDetail.png" alt="Days Since reminder detail — countdown to a birthday with on-device Generate Message button" /></div>
       </div>
     </div>
   </div>
@@ -435,7 +496,7 @@
 </section>
 
 <!-- ── PRICING ── -->
-<section class="pricing" id="pricing">
+<section class="pricing alt" id="pricing">
   <div class="inner">
     <div class="sec-eyebrow" style="text-align:center;">Pricing</div>
     <h2 class="sec-h2">Free to start. One-time unlock.</h2>
@@ -491,7 +552,7 @@
 </section>
 
 <!-- ── FINAL CTA ── -->
-<section class="final">
+<section class="final alt">
   <div class="inner">
     <h2>The last time, and the next time.</h2>
     <p>A calm, private way to remember the small things that keep life running.</p>
