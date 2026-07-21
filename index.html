@@ -251,9 +251,10 @@
     .foot-links a { color: rgba(255,255,255,0.65); }
     .foot-links a:hover { color: white; }
     .foot-legal { max-width: 1080px; margin: 26px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 12px; color: rgba(255,255,255,0.45); line-height: 1.55; }
-    .foot-more { max-width: 1080px; margin: 26px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.12); }
-    .foot-more a { color: rgba(255,255,255,0.65); }
-    .foot-more a:hover { color: white; }
+    .foot-apps h5 { font-size: 14px; font-weight: 700; color: white; margin-bottom: 10px; letter-spacing: -0.01em; }
+    .foot-apps ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .foot-apps ul a { color: rgba(255,255,255,0.65); }
+    .foot-apps ul a:hover { color: white; }
 
     /* ── Tablet ── */
     @media (min-width: 640px) {
@@ -261,7 +262,7 @@
       .priv-grid { grid-template-columns: repeat(3, 1fr); }
       .price-split { grid-template-columns: 1fr 1fr; }
       .hero h1 { font-size: 46px; }
-      .foot { flex-direction: row; align-items: center; }
+      .foot { flex-direction: row; align-items: flex-start; }
     }
 
     /* ── Desktop ── */
@@ -607,11 +608,13 @@
       <a href="/support.html">Support</a>
       <a href="/privacy.html">Privacy Policy</a>
     </div>
-  </div>
-  <div class="foot-more">
-    Also from the maker of Days Since:
-    <a href="https://www.familypocket.co.nz/">FamilyPocket — pocket money tracker</a> ·
-    <a href="https://www.familymeals.co.nz/">FamilyMeals — family meal planner</a>
+    <div class="foot-apps">
+      <h5>Our other apps</h5>
+      <ul>
+        <li><a href="https://www.familypocket.co.nz/">FamilyPocket — pocket money tracker</a></li>
+        <li><a href="https://www.familymeals.co.nz/">FamilyMeals — family meal planner</a></li>
+      </ul>
+    </div>
   </div>
   <div class="foot-legal">
     Days Since is a private day counter for iPhone and iPad. Track the days since you last did something, count down to what's next, and keep life's recurring moments organised — privately, on your own devices.
