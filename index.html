@@ -227,6 +227,28 @@
     .tier p { font-size: 14px; color: var(--text-sec); line-height: 1.55; }
     .price-note { font-size: 13px; color: var(--text-muted); margin-top: 24px; }
 
+    /* ── Our other apps ── */
+    .other-apps { background: var(--card); border-block: 1px solid var(--border); scroll-margin-top: 60px; }
+    .other-apps-inner { max-width: 1080px; margin: 0 auto; padding: 44px 20px; }
+    .other-apps h2 { margin-bottom: 24px; }
+    .other-apps-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; list-style: none; }
+    .other-apps-grid > li { min-width: 0; }
+    .other-app-card { display: flex; align-items: flex-start; gap: 14px; height: 100%; padding: 18px; background: var(--bg); border: 1px solid var(--border); border-radius: var(--r-lg); color: var(--text); text-decoration: none; }
+    .other-app-card:hover { border-color: var(--coral); }
+    .other-app-card:focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }
+    .other-app-card img { width: 48px; height: 48px; flex: 0 0 auto; border-radius: 11px; }
+    .other-app-copy { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+    .other-app-copy h3 { font-size: 18px; font-weight: 700; line-height: 1.3; letter-spacing: -0.02em; margin-bottom: 8px; }
+    .other-app-copy p { font-size: 14px; line-height: 1.55; color: var(--text-sec); margin-bottom: 12px; }
+    .other-app-link { font-size: 14px; font-weight: 600; color: #B64032; margin-top: auto; }
+    .other-app-card:hover .other-app-link { text-decoration: underline; text-underline-offset: 3px; }
+    @media (min-width: 768px) {
+      .other-apps-inner { padding: 52px 34px; }
+      .other-apps-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+      .other-app-card { flex-direction: column; gap: 16px; padding: 22px; }
+      .other-app-card img { width: 56px; height: 56px; border-radius: 13px; }
+    }
+
     /* ── FAQ ── */
     .faq-list { display: flex; flex-direction: column; gap: 9px; margin-top: 28px; }
     .faq-list details { background: var(--card); border: 1px solid var(--border); border-radius: var(--r-md); padding: 15px 17px; }
@@ -551,6 +573,45 @@
       </div>
       <p class="price-note">No subscription. No ads. No account.</p>
     </div>
+  </div>
+</section>
+
+<!-- ── Our other apps ── -->
+<section class="other-apps" id="other-apps" aria-labelledby="other-apps-heading">
+  <div class="other-apps-inner">
+    <h2 class="sec-h2" id="other-apps-heading">Our other apps</h2>
+    <ul class="other-apps-grid">
+      <li>
+        <a class="other-app-card" href="https://www.familypocket.co.nz/">
+          <img src="/images/other-apps/familypocket.png" alt="" width="128" height="128" loading="lazy" decoding="async">
+          <div class="other-app-copy">
+            <h3>FamilyPocket</h3>
+            <p>Keep track of kids’ pocket money, spending, allowance and savings goals in one place.</p>
+            <span class="other-app-link">Learn more <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="other-app-card" href="https://www.familymeals.co.nz/">
+          <img src="/images/other-apps/familymeals.png" alt="" width="128" height="128" loading="lazy" decoding="async">
+          <div class="other-app-copy">
+            <h3>FamilyMeals</h3>
+            <p>Plan dinners together, vote on meals and build a shared shopping list from the week’s plan.</p>
+            <span class="other-app-link">Learn more <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a class="other-app-card" href="https://www.familykeepsake.app/">
+          <img src="/images/other-apps/familykeepsake.png" alt="" width="128" height="128" loading="lazy" decoding="async">
+          <div class="other-app-copy">
+            <h3>FamilyKeepsake</h3>
+            <p>Save and organise kids’ artwork, certificates and creations in your family’s own iCloud.</p>
+            <span class="other-app-link">Learn more <span aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </li>
+    </ul>
   </div>
 </section>
 
