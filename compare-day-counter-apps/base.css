@@ -1,5 +1,4 @@
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
       --coral:       #F26B5B;   /* primary accent */
@@ -215,4 +214,3 @@
       .feature .row.flip > * { direction: ltr; }
       .feature h2 { font-size: 30px; }
     }
-  
